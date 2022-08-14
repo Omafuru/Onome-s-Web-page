@@ -1,0 +1,218 @@
+/*link to my fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap');
+
+/*css site setup*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Tahoma, sans-serif;
+    color: bisque;
+    text-decoration: none;
+    background: black;
+}
+
+.none{
+    background: none;
+}
+
+.img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: inline-block;
+}
+.img1{
+    width: 40%;
+    height: 80%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-right: 0px;
+    margin-left: 750px;
+    position: absolute;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+
+/* navigation bar begins*/
+.no-background{
+    background: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: auto;
+    padding: 20px 0;
+    width: 85%;
+    position: relative;
+    background: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    list-style: none;
+    font-size: 1em;
+    
+}
+
+nav ul li a{
+    color: orange;
+    font-weight: bold;
+    transition: all 0.6s ease;
+}
+
+/* navigation hover*/
+nav ul li a:hover{
+    color: crimson;
+}
+/* navigation bar ends*/
+
+/*details section begins*/
+.details{
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-bottom: 200px;
+    position: relative;
+    line-height: 3.5em;
+    max-width: 50em;
+    color: #fff;
+    background: transparent;
+
+}
+.details .text1{
+    font-size: 1.7em
+
+}
+.details .text2{
+    font-size: 4.7em;
+    font-weight: 700;
+
+}
+.details .text3{
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+p{
+    line-height: 2em;
+}
+
+.button{
+    color: pink;
+    font-weight: bold;
+    margin: 30px 8px;
+    display: inline-block;
+    background: orange;
+    border-radius: 20px;
+    padding: 6px 18px;
+    font-size: 23px;
+    border: 2px solid orange;
+    transition: all 0.8s ease;
+}
+
+.button:hover{
+    color: yellow;
+    background: none ;
+}
+
+span{
+    color: orange;
+}
+
+/*about section*/
+.about{
+    position: absolute;
+    height: 50px;
+    display:inline-block;
+}
+.heading{
+    font-size: 50px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.heading span{
+    color: orange;
+}
+.row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding-bottom: 2em;
+}
+.image{
+    flex: 1 1 25em ;
+}
+.fine{
+    height: 65%;
+    width:  100%;
+    object-fit: cover;
+    border: 1rem solid orange;
+    border-radius: 10px;
+    box-shadow: 0 .5em 1em rgba(0,0,0,.1);
+}
+.content{
+    flex: 1 1 50em;
+}
+
+h3{
+    color: orange;
+    font-size: 25px;
+}
+
+p{
+    color: #ccc;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.box{
+    flex: 1 1 20px;
+}
+.hey{
+    width: 100vw;
+    height: 100vh;
+}
+
+.skills{
+    width: 100%;
+    padding-right: 30%;
+    padding-left:  2%;
+}
+.bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.bar span{
+    display: block;
+    height: 100%;
+    background: wheat;
+}
+
+.progress:nth-child(1) span{
+    width: 70%;
+}
+
+.progress:nth-child(2) span{
+    width: 75%;
+}
+
+.progress:nth-child(3) span{
+    width: 20%;
+}
+
