@@ -9,7 +9,7 @@
     font-family: 'Raleway', Tahoma, sans-serif;
     color: bisque;
     text-decoration: none;
-    background: black;
+    background: pink;
 }
 
 .none{
@@ -21,6 +21,7 @@
     height: 100vh;
     position: absolute;
     display: inline-block;
+    background: none;
 }
 .img1{
     width: 40%;
@@ -126,6 +127,7 @@ span{
     position: absolute;
     height: 50px;
     display:inline-block;
+    background: transparent;
 }
 .heading{
     font-size: 50px;
