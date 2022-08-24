@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
     outline: none;
     border: none;
@@ -20,9 +20,13 @@ body{
     align-items: flex-end;
     justify-content: space-between;
     background: linear-gradient(deeppink, purple);
-    padding: 2.5rem;
+    padding: 1.5rem;
 }
 
+section{
+    padding: 1rem 7%;
+    min-height: 100%;
+}
 .btn{
     font-size: 2rem;
     padding: 1.5rem 4rem;
@@ -36,7 +40,7 @@ body{
 }
 
 .btn:hover{
-    background: rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, .5);
     color: #555;
 }
 
@@ -97,7 +101,7 @@ header .navbar ul li a{
     color: #fff;background: rgba(255, 255, 255, .2);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-radius: 1rem;
-    text-decoration: wavy;
+    text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -108,7 +112,7 @@ header .navbar ul li a:hover{
 }
 
 .container{
-    height: 67rem;
+    height: 67.51rem;
     width: 80rem;
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
@@ -118,7 +122,6 @@ header .navbar ul li a:hover{
 }
 
 .home{
-    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,10 +181,6 @@ header .navbar ul li a:hover{
     color: #555;
 }
 
-.about{
-    min-height: 100%;
-}
-
 .about .content h3{
     font-size: 2.5rem;
     color: #eee;
@@ -194,5 +193,227 @@ header .navbar ul li a:hover{
 .about .content p{
     font-size: 1.5rem;
     color: #eee;
-    padding: 5rem 0;
+    padding: 3rem 0;
+}
+.about .skills{
+    padding: 1rem 0;
+}
+
+.about .skills .progress{
+    margin: 1.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+}
+
+.about .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.about .skills .progress .bar{
+    position: relative;
+    width: 100%;
+    height: .7rem;
+    margin: .7rem 0;
+    background: #555;
+}
+.about .skills .progress .bar span{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.about .skills .progress:nth-child(1) .bar span{
+    width: 80%;
+} 
+
+.about .skills .progress:nth-child(2) .bar span{
+    width: 70%;
+} 
+
+.about .skills .progress:nth-child(3) .bar span{
+    width: 60%;
+} 
+
+.about .skills .progress:nth-child(4) .bar span{
+    width: 40%;
+} 
+
+.about .skills .progress:nth-child(5) .bar span{
+    width: 60%;
+} 
+
+.service .box-container{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container:nth-child(5){
+    justify-self: center;
+}
+.service .box-container .box{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    width: 32rem;
+}
+
+.service .box-container .box i{
+    color: #fff;
+    font-size: 4.5rem;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    color: #eee;
+    font-size: 1.2rem;
+    padding: .1rem .1rem;
+}
+.education .box-container{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.education .box-container .box{
+    width: 30rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    border-left: .5rem solid #eee;
+}
+
+.education .box-container .box .year{
+    font-size: 2rem;
+    color: #eee;
+    position: relative;
+}
+
+.education .box-container .box .year::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3.2rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.3rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.contact .row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    align-items: center;
+}
+.contact .row form{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+}
+
+.contact .row form .box{
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;padding: 0 1rem;
+    margin: 1rem 0;
+    height: 4rem;
+    width: 49%;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+    color: #eee;
+}
+
+.contact .row form .message{
+    padding: 1rem;
+    height: 15rem;
+    width: 100%;
+    resize: none;
+}
+
+.contact .row form .btn{
+    margin-bottom: 1rem;
+}
+
+.contact .row .content{
+    padding: 0 5rem;
+}
+
+.contact .row .content .icons{
+    padding: 1rem 0;
+}
+
+.contact .row .content .icons h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+}
+
+.contact .row .content .icons h3 i{
+    padding-right: .5rem;
+}
+
+.contact .row .content .icons p{
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.theme-toggler{
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    backdrop-filter: blur(.4rem);
+}
+
+.theme-toggler span{
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2rem 2.5rem;
+    box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2),
+                0 1rem 2rem  rgba(0, 0, 0, .4);
+
+}
+/*media quaries*/
+@media (max-width: 61.938rem){
+    header{
+        
+    }
 }
